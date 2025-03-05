@@ -1,12 +1,12 @@
-# Parallelepiped Analysis Application - Deployment Guide
+# Parallelepiped Statistics Application - Deployment Guide
 
 ## Overview
-This application processes data about parallelepipeds, calculates their geometric properties, and generates statistical reports in JSON and HTML formats.
+This application processes data about parallelepipeds, calculates their geometric properties, and generates statistical reports in JSON format.
 
 ### Manual Setup Steps
 1. Clone the repository
    ```bash
-   git clone https://github.com/AzizaMoldosheva/my_project/new/main?filename=README.md
+   git clone (https://github.com/AzizaMoldosheva/my_project/edit/main/README.md)
    cd my_project
 
    ```
@@ -23,25 +23,22 @@ This application processes data about parallelepipeds, calculates their geometri
 
 ## Project Structure
 ```
-project/
+parallelepiped_project/
 ├── main.py                 # Main script
 ├── parallelepipeds.json    # Input data with parallelepiped dimensions
 ├── utils/
 │   ├── __init__.py         # Utils package initialization
 │   ├── functions.py        # Mathematical functions
 │   ├── statistics.py       # Statistical analysis
-│   └── html.py             # HTML report generation
 └── outputs/                # Output files directory
     ├── characteristics.json
     ├── statistics.json
-    └── data_summary.html
 ```
 
 ## What the Application Does
 - Reads parallelepiped dimensions from a JSON file
 - Calculates properties like diagonal, volume, surface area, angles, and sphere parameters
 - Computes averages across all parallelepipeds
-- Generates an HTML report with visualizations
 - Outputs data to JSON files for further analysis
 
 ## Requirements
@@ -51,14 +48,14 @@ project/
 ## Output Files
 - `characteristics.json`: Detailed data for each parallelepiped
 - `statistics.json`: Statistical summary across all figures
-- `data_summary.html`: Interactive HTML report with statistics and ASCII animation
 
 ## Customization
 - Edit `parallelepipeds.json` to analyze different figures
 - Modify calculations in `utils/functions.py`
-- Change report design in `utils/html.py`
 
 ## Troubleshooting
 - Ensure the `outputs` directory exists before running
 - Verify that your Python version is 3.6 or newer
 - Check `parallelepipeds.json` for valid JSON syntax if errors occur
+
+
